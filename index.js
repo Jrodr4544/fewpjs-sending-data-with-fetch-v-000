@@ -16,7 +16,7 @@ const submitData = (name, email) => {
   
   return fetch("http://localhost:3000/users", configObj)
             .then(response => {
-              console.log(response)
+              // console.log(response)
               document.getElementsByClassName("body").append(response.json())
             })
 }
