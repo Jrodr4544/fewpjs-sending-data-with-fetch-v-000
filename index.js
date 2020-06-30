@@ -19,5 +19,8 @@ const submitData = (name, email) => {
             .then((result) => {
               document.body.innerHTML = result.id
             })
+            .catch((error) => {
+              
+            })
 
 }
