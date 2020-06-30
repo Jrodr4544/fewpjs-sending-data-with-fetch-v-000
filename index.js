@@ -20,7 +20,7 @@ const submitData = (name, email) => {
               document.body.innerHTML = result.id
             })
             .catch((error) => {
-              
+              document.body.innerHTML = error.message
             })
 
 }
