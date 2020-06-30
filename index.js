@@ -17,9 +17,7 @@ const submitData = (name, email) => {
   return fetch("http://localhost:3000/users", configObj)
             .then(response => response.json())
             .then((result) => {
-              document.getElementsByClassName("body").append(result)
+              document.getElementsByClassName("body").append(result.id)
             })
-              // console.log(response)
-              document.getElementsByClassName("body").append(response.json())
-            })
+
 }
